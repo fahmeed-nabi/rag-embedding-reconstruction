@@ -1,0 +1,32 @@
+# CS 6501 Data Privacy Project — Requirements
+# Python 3.10
+
+# Core ML / Deep Learning
+torch==2.4.1+cu121          # GPU build; swap for torch==2.4.1 on CPU-only
+numpy
+
+# Hugging Face ecosystem
+transformers
+diffusers                   # DDPMScheduler (CMD denoising logic)
+evaluate                    # BLEU and ROUGE metrics via evaluate.load()
+langchain-community         # FAISS vectorstore wrapper
+langchain-huggingface       # HuggingFaceEmbeddings
+
+# Vector search
+faiss-gpu                   # use faiss-cpu if no GPU available
+
+# Differential Privacy
+opacus                      # PrivacyEngine for DP training
+
+# NLP metrics (Phase 3 uses these directly)
+nltk                        # sentence_bleu, SmoothingFunction
+rouge-score                 # rouge_scorer
+
+# Data / Utilities
+pandas
+matplotlib
+tqdm
+
+# Jupyter
+jupyterlab
+ipywidgets                  # suppresses tqdm IProgress warning
