@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28160934/README.md)[Uploading RE# Embedding Inversion Attacks on RAG Systems
+## Evaluating Embedding Reconstruction Risk in RAG Systems
 
 A grey-box privacy audit of unprotected FAISS vector stores. This project implements two complementary embedding inversion attacks against GTR-T5 RAG pipelines to quantify PII leakage risks, then benchmarks Laplace noise differential privacy defenses against both.
 
